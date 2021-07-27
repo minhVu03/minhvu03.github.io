@@ -3,17 +3,43 @@
     <head>
         <title>Minh Vu</title>
         <style>
+            /* Add a black background color to the top navigation */
+            .topnav {
+            background-color: rgb(0, 63, 90);
+            overflow: hidden;
+            }
 
+            /* Style the links inside the navigation bar */
+            .topnav a {
+            float: left;
+            color: rgb(254, 160, 47);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+
+            /* Change the color of links on hover */
+            .topnav a:hover {
+            background-color: rgb(222, 102, 0);
+            color: rgb(0, 63, 90);
+            }
+
+            /* Add a color to the active/current link */
+            .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+            }
         </style>
     </head>
     <body>
         <h1>HI IM CARROT :3</h1>
         <!-- Primary Menu -->
-        <div class="module menu left">
+        <div class="topnav">
             <ul id="nav-primary" class="nav nav-primary">
-                <li><a href="#home">Start</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="experience.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </body>
