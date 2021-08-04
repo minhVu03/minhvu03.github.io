@@ -1,0 +1,79 @@
+:root{
+    --global-bg: rgb(18, 18, 18);
+    --global-bg2: rgb(38,38,38);
+    --global-primary: rgb(222,102,0);
+    --global-second: rgb(254,160,47);
+    --global-accent: rgb(28, 228, 255);
+}
+body{
+    background-color: var(--global-bg);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--global-bg2);
+    overflow: hidden;
+}
+
+.topnav ul {
+    list-style-type: none;  /*removes bullets*/
+    padding: 0px;
+    margin: 0px;
+    display:inline-flex;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: var(--global-second);
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a.title {
+    background-color: var(--global-bg);
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: var(--global-second);
+    color: var(--global-bg);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: var(--global-primary);
+    color: var(--global-bg);
+}
+
+.logo{
+    float: left;
+}
+
+#header{
+    width: 100%;
+    height: 25vh;
+    background-color: var(--global-bg2);
+    position: relative;
+}
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: var(--global-primary);
+    letter-spacing: -3px;
+    font-weight: 100;
+    text-transform: uppercase;
+}

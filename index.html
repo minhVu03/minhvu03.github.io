@@ -2,70 +2,19 @@
 <html lang = "en">
     <head>
         <title>Minh Vu</title>
-        <style>
-            :root{
-                --global-bg: rgb(18, 18, 18);
-                --global-bg2: rgb(38,38,38);
-                --global-primary: rgb(0,134,223);
-                --global-accent: rgb(50,222,224);
-            }
-            body{
-                background-color: var(--global-bg);
-                font-family:Verdana, Geneva, Tahoma, sans-serif;
-            }
-
-            ul {
-                position: fixed;
-                top: 0;
-                width: 100%;
-                list-style-type: none;  /*removes bullets*/
-                margin: 0;
-                padding: 0;
-            }
-
-            /* Add a black background color to the top navigation */
-            .topnav {
-                background-color: var(--global-bg2);
-                overflow: hidden;
-            }
-
-            /* Style the links inside the navigation bar */
-            .topnav a {
-                float: left;
-                color: var(--global-accent);
-                text-align: center;
-                padding: 14px 30px;
-                text-decoration: none;
-                font-size: 17px;
-            }
-
-            .topnav a.title {
-                background-color: var(--global-bg);
-                font-size: 20px;
-                
-            }
-
-            /* Change the color of links on hover */
-            .topnav a:hover {
-                background-color: var(--global-accent);
-                color: var(--global-bg);
-            }
-
-            /* Add a color to the active/current link */
-            .topnav a.active {
-                background-color: rgb(222, 102, 0);
-                color: var(--global-bg);
-            }
-            
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <header id="header">
+            <h1>Minh Vu</h1>
+        </header>
+
         <!-- Primary Menu -->
         <div class="topnav">
             <ul id="nav-primary" class="nav nav-primary">
-                <li><a class="title">Minh Vu</a></li>
+                <image class="logo" src="icon.PNG" width="45" ></image>
                 <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="experience.html">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
