@@ -11,9 +11,12 @@
 
             }
             ul {
-            list-style-type: none;  /*removes bullets*/
-            margin: 0;
-            padding: 0;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                list-style-type: none;  /*removes bullets*/
+                margin: 0;
+                padding: 0;
             }
 
             body{
@@ -22,34 +25,36 @@
 
             /* Add a black background color to the top navigation */
             .topnav {
-            background-color: var(--global-bg2);
-            overflow: hidden;
+                background-color: var(--global-bg2);
+                overflow: hidden;
             }
 
             /* Style the links inside the navigation bar */
             .topnav a {
-            float: left;
-            color: rgb(254, 160, 47);
-            text-align: center;
-            padding: 14px 30px;
-            text-decoration: none;
-            font-size: 17px;
+                float: left;
+                color: var(--global-accent);
+                text-align: center;
+                padding: 14px 30px;
+                text-decoration: none;
+                font-size: 17px;
             }
 
             /* Change the color of links on hover */
             .topnav a:hover {
-            background-color: rgb(254, 160, 47);
-            color: var(--global-bg);
+                background-color: var(--global-accent);
+                color: var(--global-bg);
             }
 
             /* Add a color to the active/current link */
             .topnav a.active {
-            background-color: rgb(222, 102, 0);
-            color: var(--global-bg);
+                background-color: rgb(222, 102, 0);
+                color: var(--global-bg);
             }
             .topnav a.title {
-            background-color: var(--global-bg);
+                background-color: var(--global-bg);
+            
             }
+
         </style>
     </head>
     <body>
