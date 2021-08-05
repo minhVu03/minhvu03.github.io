@@ -10,9 +10,14 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 body{
     background-color: var(--global-bg);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 #header{
@@ -22,24 +27,9 @@ body{
     position: relative;
 }
 
-.logo{
-    float: left;
-}
-
-h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5rem;
-    color: var(--global-primary);
-    letter-spacing: -3px;
-    font-weight: 100;
-    text-transform: uppercase;
-}
-
 /* Add a black background color to the top navigation */
 .topnav {
+    z-index: 2; /*control order of objects on top of each other*/
     position: sticky;
     top: 0;
     width: 100%;
@@ -53,7 +43,7 @@ h1{
     list-style-type: none;  /*removes bullets*/
     padding: 0px;
     margin: 0px;
-    display:inline-flex;
+    display:block;
 }
 
 /* Style the links inside the navigation bar */
@@ -78,26 +68,61 @@ h1{
     color: var(--global-bg);
 }
 
-section{
+.logo{
+    float: left;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: var(--global-primary);
+    letter-spacing: -3px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+h2{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    font-size: 40px;
+    color: var(--global-second);
+    letter-spacing: -2px;
+}
+
+.main{
     width: 100%;
     height: 50rem;
     position: relative;
 }
 
-section h1{
-    top: 20rem;
+#projects{
+    background-color: var(--global-bg2);
 }
 
 footer{
     position: relative;
-    height: 100rem;
+    height: 30rem;
     background-color: var(--global-bg2);
 }
 
-/*class to apply on scroll with JS*/
-.fixed{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 20;
-}
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--global-bg2); 
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--global-primary); 
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--global-second); 
+  }
