@@ -63,9 +63,9 @@ html{
     float: left;
     color: var(--global-second);
     text-align: center;
-    padding: 14px 30px;
+    padding: 0.875rem 1.975rem;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.0625rem;
 }
 
 /* Change the color of links on hover */
