@@ -67,8 +67,23 @@ html{
     display:block;
 }
 
-#homeButton:hover {
+#homeNav:hover {
     background-color: var(--darkBlue);
+    color: var(--global-bg);
+}
+
+#projectNav:hover {
+    background-color: var(--darkGreen);
+    color: var(--global-bg);
+}
+
+#galleryNav:hover {
+    background-color: var(--darkOrange);
+    color: var(--global-bg);
+}
+
+#contactsNav:hover {
+    background-color: var(--darkRed);
     color: var(--global-bg);
 }
 
@@ -86,10 +101,6 @@ html{
 .topnav a:hover {
     background-color: var(--global-second);
     color: var(--global-bg);
-}
-
-#navLogo:hover{
-    background-color: var(--global-bg2);
 }
 
 /* Add a color to the active/current link */
