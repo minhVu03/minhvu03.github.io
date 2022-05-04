@@ -1,9 +1,18 @@
 :root{
     --global-bg: rgb(18, 18, 18);
     --global-bg2: rgb(38,38,38);
-    --global-primary: rgb(222,102,0);
-    --global-second: rgb(254,160,47);
-    --global-accent: rgb(28, 228, 255);
+    
+    --darkBlue: rgb(22,143,255);
+    --lightBlue: rgb(99,180,255);
+
+    --darkGreen: rgb(23,203,73);
+    --lightGreen: rgb(139,247,169);
+
+    --darkOrange: rgb(255,159,45);
+    --lightOrange: rgb(255,207,148);
+
+    --darkRed: rgb(247,65,65);
+    --lightRed: rgb(242,155,155);
 }
 *{
     margin: 0px;
@@ -89,6 +98,13 @@ html{
     padding: 0px;
 }
 
+@media screen and (max-width: 400px) {
+    .topnav li a {
+      text-align: center;
+      float: none;
+    }
+}
+
 h1{
     z-index: 2;
     position: absolute;
@@ -121,7 +137,7 @@ h2{
     top: 0rem;
     float: left;
     width: 100%;
-    object-fit: fit;
+    object-fit:fill;
     position: relative;
     opacity: 0.2;
 }
