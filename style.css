@@ -1,7 +1,7 @@
 :root{
     --global-bg: rgb(18, 18, 18);
     --global-bg2: rgb(38,38,38);
-    
+
     --darkBlue: rgb(22,143,255);
     --lightBlue: rgb(99,180,255);
 
@@ -65,6 +65,11 @@ html{
     padding: 0px;
     margin: 0px;
     display:block;
+}
+
+#homeButton:hover {
+    background-color: var(--darkBlue);
+    color: var(--global-bg);
 }
 
 /* Style the links inside the navigation bar */
