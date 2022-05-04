@@ -13,6 +13,8 @@
 
     --darkRed: rgb(247,65,65);
     --lightRed: rgb(242,155,155);
+
+    --mainText: rgb(128, 128, 128);
 }
 *{
     margin: 0px;
@@ -43,10 +45,12 @@ html{
 }
 
 .background{
-    opacity: 0.2;
+    /*opacity: 0.2;*/
     width: 100%;
     object-fit: fit;
 }
+
+/********************************* NAVIGATION BAR COLOURS ***************************************/
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -67,40 +71,56 @@ html{
     display:block;
 }
 
-#homeNav:hover {
-    background-color: var(--darkBlue);
+/* Individual colours */
+#homeColor {
+    color: var(--darkBlue);
+}
+#homeColor:hover {
+    background-color: var(--lightBlue);
+    color: var(--global-bg);
+}
+#homeColor:active {
+    background-color: var(--lightBlue);
+    color: var(--global-bg);
+}
+#homeBody {
+    color: var(--mainText);
+    top: 10%;
+    left: 10%;
+}
+
+#projectColor {
+    color: var(--darkGreen);
+}
+#projectColor:hover {
+    background-color: var(--lightGreen);
     color: var(--global-bg);
 }
 
-#projectNav:hover {
-    background-color: var(--darkGreen);
+#galleryColor {
+    color: var(--darkOrange);
+}
+#galleryColor:hover {
+    background-color: var(--lightOrange);
     color: var(--global-bg);
 }
 
-#galleryNav:hover {
-    background-color: var(--darkOrange);
-    color: var(--global-bg);
+#contactsColor {
+    color: var(--darkRed);
 }
-
-#contactsNav:hover {
-    background-color: var(--darkRed);
+#contactsColor:hover {
+    background-color: var(--lightRed);
     color: var(--global-bg);
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    color: var(--global-second);
+    /*color: var(--global-second);*/
     text-align: center;
     padding: 0.875rem 1.975rem;
     text-decoration: none;
     font-size: 1.0625rem;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: var(--global-second);
-    color: var(--global-bg);
 }
 
 /* Add a color to the active/current link */
@@ -121,6 +141,8 @@ html{
     }
 }
 
+/********************************* END OF NAVIGATION BAR **************************************/
+
 h1{
     z-index: 2;
     position: absolute;
@@ -128,7 +150,7 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5rem;
-    color: var(--global-primary);
+    color: var(--global-bg2);
     letter-spacing: -3px;
     font-weight: 100;
     text-transform: uppercase;
@@ -139,7 +161,6 @@ h2{
     top: 10%;
     left: 10%;
     font-size: 40px;
-    color: var(--global-second);
     letter-spacing: -2px;
 }
 

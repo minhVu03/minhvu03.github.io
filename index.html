@@ -10,36 +10,39 @@
     <body>
         <header id="header">
             <h1>Minh Vu</h1>
-            <image class="background" id='headerBG' src="colourPattern2.png"></image>
+            <!--<image class="background" id='headerBG' src="colourPattern2.png"></image>-->
+            <image class="background" id="headerBG" src="headerPic.png"></image>
         </header>
 
         <!-- Primary Menu -->
         <div class="topnav">
             <ul>
                 <li><a href="#header" id='navLogo'><image class="logo" src="navbarCarrot.png" width="48.4"></image></a></li>
-                <li><homeButton href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contacts">Contact</a></li>
+                <li><a href="#home" id='homeColor'>Home</a></li>
+                <li><a href="#projects" id="projectColor">Projects</a></li>
+                <li><a href="#gallery" id="galleryColor">Gallery</a></li>
+                <li><a href="#contacts" id="contactsColor">Contacts</a></li>
             </ul>
         </div>
         
         <!--Body of webpage-->
         <div class="main" id='home'>
-            <h2>About me</h2>
+            <h2><span id="homeColor">About me</span></h2>
+            <body><span id="homeBody">This is where I would write about myself but 
+                I honestly have nothing to say yet hahaha why is it centered weird :( </span></body>
         </div>
 
         <div class="main" id='projects'>
-            <h2>Projects</h2>
+            <h2><span id="projectColor">Projects</span></h2>
             <image id='mainBG' src="blackPattern.png"></image>
         </div>
 
         <div class="main" id='gallery'>
-            <h2>Gallery</h2>
+            <h2><span id="galleryColor">Gallery</span></h2>
         </div>
 
         <div class="main" id='contacts'>
-            <h2>Contact me</h2>
+            <h2><span id="contactsColor">Contact me!</span></h2>
             <image id='mainBG' src="blackPattern.png"></image>
         </div>
 
