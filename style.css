@@ -16,6 +16,7 @@
 
     --mainText: rgb(128, 128, 128);
 }
+
 *{
     margin: 0px;
     padding: 0px;
@@ -28,9 +29,8 @@ body{
     display: block;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     position: relative;
-    
+    overflow-x:hidden;
 }
 
 html{
@@ -38,146 +38,32 @@ html{
 }
 
 #header{
-    width: 100%;
-    height: 33.5rem;
+    height: 91.5vh;
     background-color: var(--global-bg2);
     position: relative;
 }
 
-.background{
+.headerPic{
     /*opacity: 0.2;*/
     width: 100%;
     object-fit: fit;
 }
 
-/********************************* NAVIGATION BAR COLOURS ***************************************/
-
-/* Add a black background color to the top navigation */
-.topnav {
-    z-index: 2; /*control order of objects on top of each other*/
-    position: sticky;
-    top: 0;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    background-color: var(--global-bg2);
-    overflow: hidden;
-}
-
-.topnav ul {
-    list-style-type: none;  /*removes bullets*/
-    padding: 0px;
-    margin: 0px;
-    display:block;
-}
-
-/* Individual colours */
-#homeColor {
-    color: var(--darkBlue);
-}
-#homeColor:hover {
-    background-color: var(--lightBlue);
-    color: var(--global-bg);
-}
-#homeColor:active {
-    background-color: var(--lightBlue);
-    color: var(--global-bg);
-}
-#homeBody {
-    color: var(--mainText);
-    top: 10%;
-    left: 10%;
-}
-
-#projectColor {
-    color: var(--darkGreen);
-}
-#projectColor:hover {
-    background-color: var(--lightGreen);
-    color: var(--global-bg);
-}
-
-#galleryColor {
-    color: var(--darkOrange);
-}
-#galleryColor:hover {
-    background-color: var(--lightOrange);
-    color: var(--global-bg);
-}
-
-#contactsColor {
-    color: var(--darkRed);
-}
-#contactsColor:hover {
-    background-color: var(--lightRed);
-    color: var(--global-bg);
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    /*color: var(--global-second);*/
-    text-align: center;
-    padding: 0.875rem 1.975rem;
-    text-decoration: none;
-    font-size: 1.0625rem;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: var(--global-primary);
-    color: var(--global-bg);
-}
-
-#navLogo{
-    float: left;
-    padding: 0px;
-}
-
-@media screen and (max-width: 400px) {
-    .topnav li a {
-      text-align: center;
-      float: none;
-    }
-}
-
-/********************************* END OF NAVIGATION BAR **************************************/
-
-h1{
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5rem;
-    color: var(--global-bg2);
-    letter-spacing: -3px;
-    font-weight: 100;
-    text-transform: uppercase;
-}
-h2{
-    z-index: 1;
-    position: relative;
-    top: 10%;
-    left: 10%;
-    font-size: 40px;
-    letter-spacing: -2px;
-}
-
 .main{
-    width: 100%;
-    height: 50rem;
+    height: 60rem;
     position: relative;
+    min-height: 100%;
+
 }
 
 .main #mainBG{
     top: 0rem;
     float: left;
-    width: 100%;
     object-fit:fill;
     position: relative;
     opacity: 0.2;
 }
+
 #projects{
     background-color: var(--global-bg2);
 }
@@ -190,8 +76,11 @@ h2{
 
 footer{
     position: relative;
-    height: 30rem;
+    height: 15rem;
     background-color: var(--global-bg);
+    padding: 15%;
+    padding-left: 35%;
+    text-decoration: none;
 }
 
 
@@ -206,9 +95,30 @@ footer{
   }
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--global-primary); 
+    background: var(--lightRed); 
   }
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--global-second); 
+    background: var(--darkRed); 
   }
+
+  /*******************************GALLERY**************************************/
+
+  .container{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.images img{
+    width: 100%;
+}

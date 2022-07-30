@@ -1,0 +1,86 @@
+/********************************* NAVIGATION BAR ***************************************/
+
+/* Add a black background color to the top navigation */
+.topnav {
+    z-index: 2; /*control order of objects on top of each other*/
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--global-bg2);
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    /*color: var(--global-second);*/
+    text-align: center;
+    padding: 0.875rem 1.975rem;
+    text-decoration: none;
+    font-size: 1.0625rem;
+}
+
+#navLogo{
+    float: left;
+    padding: 0px;
+}
+
+.topnav ul {
+    list-style-type: none;  /*removes bullets*/
+    padding: 0px;
+    margin: 0px;
+    display:block;
+}
+
+/* Individual colours */
+#homeNav {
+    text-decoration:none;
+    color: var(--darkBlue);
+}
+#homeNav:hover {
+    background-color: var(--lightBlue);
+    color: var(--global-bg);
+}
+.topnav .currentHome {
+    background-color: var(--lightBlue);
+    color: var(--global-bg);
+}
+
+#projectNav {
+    text-decoration:none;
+    color: var(--darkGreen);
+}
+#projectNav:hover {
+    background-color: var(--lightGreen);
+    color: var(--global-bg);
+}
+
+#galleryNav {
+    text-decoration:none;
+    color: var(--darkOrange);
+}
+#galleryNav:hover {
+    background-color: var(--lightOrange);
+    color: var(--global-bg);
+}
+
+#contactsNav {
+    text-decoration:none;
+    color: var(--darkRed);
+}
+#contactsNav:hover {
+    background-color: var(--lightRed);
+    color: var(--global-bg);
+}
+
+
+@media screen and (max-width: 400px) {
+    .topnav li a {
+      text-align: center;
+      float: none;
+    }
+}
+
+/********************************* END OF NAVIGATION BAR **************************************/

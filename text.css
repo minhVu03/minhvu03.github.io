@@ -1,0 +1,100 @@
+
+
+/* Animation */
+.anim-typewriter{
+    animation: typewriter  4s forwards,
+               blinkTextCursor 500ms steps(22) infinite normal;
+}
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+    from, to { border-color: --darkBlue }
+    50% { border-color: transparent; }
+}
+/*@keyframes blinkTextCursor{
+    from{border-right-color: var(--global-bg2);}
+    to{border-right-color: transparent;}
+}*/
+
+h1{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    letter-spacing: -3px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: var(--global-bg2);
+    text-align:center;
+    
+    border-right: 20% solid --global-bg2; /* The typwriter cursor */
+    
+    overflow: hidden; /*make letters appear consecutively*/
+    white-space: nowrap; /*to keep text on one line*/
+
+}
+h2{
+    z-index: 1;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    font-size: 40px;
+    letter-spacing: -2px;
+}
+#h2Blue {
+    color: var(--darkBlue);
+}
+#h2Green {
+    color: var(--darkGreen);
+}
+#h2Orange {
+    color: var(--darkOrange);
+}
+#h2Red {
+    color: var(--darkRed);
+}
+
+#homeBody {
+    color: var(--mainText);
+    z-index: 1;
+    position: relative;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    display:inline-block;
+    word-wrap:normal;
+}
+
+#orangeLink {
+    color: var(--darkOrange);
+    text-decoration:none;
+}
+#orangeLink:hover {
+    color: var(--lightOrange);
+}
+
+#blueLink {
+    color: var(--darkBlue);
+    text-decoration:none;
+}
+#blueLink:hover {
+    color: var(--lightBlue);
+}
+
+#redLink {
+    color: var(--darkRed);
+    text-decoration:none;
+}
+#redLink:hover {
+    color: var(--lightRed);
+}
+
+.half-line {
+    line-height: .5em;
+  }

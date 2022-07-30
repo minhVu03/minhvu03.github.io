@@ -4,54 +4,131 @@
     <head>
         <title>Minh Vu</title>
         <link rel="icon" href="logo.png">
-        <!--Link stylesheet-->
+
+        <!--Link stylesheets-->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="navBar.css">
+        <link rel="stylesheet" href="text.css">
+        <link rel="stylesheet" href="lightbox.css">
+
     </head>
     <body>
         <header id="header">
-            <h1>Minh Vu</h1>
+            <h1 class="anim-typewriter">Hello!</h1>
             <!--<image class="background" id='headerBG' src="colourPattern2.png"></image>-->
-            <image class="background" id="headerBG" src="headerPic.png"></image>
+            <image class="headerPic" src="headerPic.png"></image>
         </header>
 
         <!-- Primary Menu -->
         <div class="topnav">
             <ul>
-                <li><a href="#header" id='navLogo'><image class="logo" src="navbarCarrot.png" width="48.4"></image></a></li>
-                <li><a href="#home" id='homeColor'>Home</a></li>
-                <li><a href="#projects" id="projectColor">Projects</a></li>
-                <li><a href="#gallery" id="galleryColor">Gallery</a></li>
-                <li><a href="#contacts" id="contactsColor">Contacts</a></li>
+                <li><a href="#header" id='navLogo'><image class="logo" src="navbarCarrot.png" width="48"></image></a></li>
+                <li><a href="#home" id='homeNav'>About me</a></li>
+                <li><a href="#projects" id="projectNav">Projects</a></li>
+                <li><a href="#gallery" id="galleryNav">Gallery</a></li>
+                <li><a href="#contacts" id="contactsNav">Contacts</a></li>
             </ul>
         </div>
         
         <!--Body of webpage-->
         <div class="main" id='home'>
-            <h2><span id="homeColor">About me</span></h2>
-            <body><span id="homeBody">This is where I would write about myself but 
-                I honestly have nothing to say yet hahaha why is it centered weird :( </span></body>
+            <h2 id="h2Blue">Hi, I'm Minh Vu</h2>
+            <br/><br/><br/><br/><br/><br/><br/><br/>
+            <image src="aboutMe.png" width="90%" height="auto" style="border-left:50px"></image>
         </div>
 
         <div class="main" id='projects'>
-            <h2><span id="projectColor">Projects</span></h2>
-            <image id='mainBG' src="blackPattern.png"></image>
+            <h2 id="h2Green">What I've coded</h2>
+            
+            <br>
+            <body><span id="homeBody"><table>
+                
+                <tr>
+                    <td><strong><a href="https://github.com/minhVu03/Discord-Bot" target="_blank" id='orangeLink'>Carrota</a></strong><p class="half-line">&nbsp;</p>
+                    A Discord bot programmed in Python using the discord.py API.
+                    Carrota responds to some random text messages in a server such as "ping" or any messages that contain "food". It meows back at you if you meow.
+                    It also responds to various commands that start with '$'.
+                    Carrota was born in 2021 and is still being updated as more features are added. My goal is to create a personality for it!
+                    Carrota falls asleep if it's inactive for a long time :( so UptimeRobot pings it every once in a while to keep it awake!</td>
+                    <td><image src="carrotaTesting.gif" width="350"></image></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br/><br/><br/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><strong><a href="https://github.com/minhVu03/Wanderlust" target="_blank" id='redLink'>Wanderlust</a></strong><p class="half-line">&nbsp;</p>
+                    A travel recommendation application programmed in Java. I created this project because one of my goals is to be able to 
+                    see all the pretty places in the world, and to experience new cultures by meeting new people. I think that the hardest 
+                    part about travelling is coming up with a plan and deciding on which places to visit. Wanderlust lets you write reviews about cities
+                    and saves them to a database of other people's reviews from previous sessions. You can then search for all the reviews of a particular city.
+                    Check out the README on my Github to see what else you can do with it!
+                    
+                </tr>
+
+                <tr>
+                    <td>
+                        <br/><br/><br/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong><a href="https://github.com/minhVu03/A-Walk-in-the-Park" target="_blank" id='blueLink'>A Walk in the Park</a></strong><p class="half-line">&nbsp;</p>
+                    A 2D platform game programmed in C using the Allegro graphics library. The game is set in a post-apocalyptic city
+                    where the environment has been destroyed. You are now a bunny trying to survive in a park by dodging trash, toxic fumes, and 
+                    chopped-down trees! Make sure to have your audio on when playing! </td>
+                    <td><video width="400" controls="controls">
+                        <source src="gameDemo.mp4" type="video/mp4"> 
+                    </video> </td>             
+                </tr>
+
+                
+            </span></table></body>
+            <br>
+
         </div>
 
         <div class="main" id='gallery'>
-            <h2><span id="galleryColor">Gallery</span></h2>
+            <h2 id="h2Orange">Gallery</h2>
+            <div class="container">
+                <div class="images">
+                    <a href="gallery/IMG_4473.jpg" data-lightbox="art" data-title="add caption here">
+                        <image src="gallery/IMG_4473.jpg">
+                    </a>
+                    <a href="gallery/IMG_5892.jpg" data-lightbox="art" data-title="add caption here">
+                        <image src="gallery/IMG_5892.jpg">
+                    </a>
+                    <a href="gallery/IMG_1189.JPG" data-lightbox="art" data-title="add caption here">
+                        <image src="gallery/IMG_1189.JPG">
+                    </a>
+                    <a href="gallery/IMG_7208.JPG" data-lightbox="art" data-title="add caption here">
+                        <image src="gallery/IMG_7208.JPG">
+                    </a>
+                    <a href="gallery/IMG_7619.jpg" data-lightbox="art" data-title="add caption here">
+                        <image src="gallery/IMG_7619.jpg">
+                    </a>
+                    <a href="gallery/IMG_1933.jpg" data-lightbox="art" data-title="add caption here">
+                        <image src="gallery/IMG_1933.jpg">
+                    </a>
+                    
+                </div>
+            </div>
+
         </div>
 
-        <div class="main" id='contacts'>
-            <h2><span id="contactsColor">Contact me!</span></h2>
-            <image id='mainBG' src="blackPattern.png"></image>
-        </div>
-
-        <!--Footer-->
-        <footer>
-            <h1>more blahblahblah</h1>
+        <!--Footer/Contacts-->
+        <footer id="contacts">
+            <a href="mailto:minhvuams@gmail.com" target="_blank"><img alt="Qries" src="email.png" width="50"></a></image>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/minhvu03/" target="_blank"><img alt="Qries" src="linkedin.png" width="50"></a></image>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/minhVu03" target="_blank"><img alt="Qries" src="github.png" width="50"></a></image>
         </footer>
 
         <!--Link to javascript file-->
-        <script scr="script.js"></script>
+        <script src="lightbox-plus-jquery.js"></script>
     </body>
 </html>

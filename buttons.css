@@ -1,0 +1,20 @@
+/* Linked buttons */
+
+.orangeButton{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    color: var(--darkOrange);
+    text-align: center;
+    display: block;
+    width:fit-content;
+    padding: 0.5%;
+
+    text-decoration: none;
+    border: none;
+
+}
+
+.orangeButton:hover{
+    background-color: var(--lightOrange);
+    color: var(--global-bg2);
+}
